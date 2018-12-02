@@ -2,6 +2,8 @@
 t/
 env/
 data/
+dead-env/
+Profile(casebookSearchCase)-20181202T182857.json
 
 *.py[cod]
 

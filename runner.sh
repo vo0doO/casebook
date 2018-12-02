@@ -5,7 +5,7 @@
 # http://kvz.io/blog/2013/11/21/bash-best-practices/
 set -o pipefail
 set -o errexit
-# set -o xtrace
+set -o xtrace
 __DIR__="$(cd "$(dirname "${0}")"; echo $(pwd))"
 __BASE__="$(basename "${0}")"
 __FILE__="${__DIR__}/${__BASE__}"
@@ -14,7 +14,10 @@ ARG1="${1:-Undefined}"
 
 # Python tools executor
 
-PROJECT_DIR="/home/valik/data/projects/casebook.ripper"
+PROJECT_DIR="/home/node/PycharmProjects/casebook/"
+CASEBOOK_USER="kirsanov.bvt@gmail.com"
+CASEBOOK_PASSWORD="e31f567b"
+CASEBOOK_DATA="/home/node/PycharmProjects/casebook/DATA/"
 
 # create virtualenv
 createVirtualenv() {
@@ -46,9 +49,9 @@ createRequirements() {
 execCasebookReader() {
     pushd "${PROJECT_DIR}"
     source env/bin/activate
-    export CASEBOOK_USER="my login at casebook.ru"
-    export CASEBOOK_PASSWORD="my password"
-    export CASEBOOK_DATA="/tmp"
+    export CASEBOOK_USER="kirsanov.bvt@gmail.com"
+    export CASEBOOK_PASSWORD="e31f567b"
+    export CASEBOOK_DATA="/home/node/PycharmProjects/casebook/DATA"
     # Time in hours to next try to download an existent case/side data
     export CASEBOOK_FRESH_PERIOD=12
     # Time in seconds, stop waiting for a responce after x seconds

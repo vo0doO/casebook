@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="runer" type="BashConfigurationType" factoryName="Bash" singleton="false">
+    <module name="casebook" />
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="INTERPRETER_PATH" value="/bin/bash" />
+    <option name="PROJECT_INTERPRETER" value="false" />
+    <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+    <option name="PARENT_ENVS" value="false" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/runner.sh" />
+    <option name="PARAMETERS" value="step execCasebookReader" />
+    <envs>
+      <env name="CASEBOOK_USER" value="kirsanov.bvt@gmail.com" />
+      <env name="CASEBOOK_PASSWORD" value="e31f567b" />
+      <env name="CASEBOOK_DATA" value="&quot;$PROJECT_DIR$/DATA/&quot;" />
+      <env name="PROJECT_DIR" value="&quot;$PROJECT_DIR$/&quot;" />
+    </envs>
+    <method v="2" />
+  </configuration>
+</component>
